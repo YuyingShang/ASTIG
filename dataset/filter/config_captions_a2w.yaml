@@ -1,0 +1,89 @@
+test_dataset:
+  '1':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: Suburban-urban mixed area, likely in the southeastern United
+      States (based on land-use patterns and vegetation density). The region features
+      a grid-like road network, residential neighborhoods, commercial zones, and patches
+      of forested or undeveloped land.'
+    name: '1'
+  '10':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The scene depicts a region undergoing rapid urban expansion,
+      likely in a subtropical or temperate zone. The landscape includes clusters of
+      residential buildings, road networks, agricultural fields, and patches of dense
+      vegetation. The area appears to be transitioning from rural to suburban, with
+      clear evidence of infrastructure development and land clearing. Coordinates
+      are not explicitly provided, but the land-use patterns suggest a developing
+      region in Asia or Southeast Asia.'
+    name: '10'
+  '100':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The scene depicts a mixed urban-rural landscape, likely in
+      a semi-arid or arid region (e.g., North Africa, Middle East, or Central Asia),
+      characterized by grid-like agricultural fields, dense built-up areas, and linear
+      infrastructure. No specific coordinates are discernible, but the environment
+      suggests a region with dry climate and intensive land use.'
+    name: '100'
+  '101':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents a high-altitude, wide-angle night-time
+      view of a dense urban landscape. The scene spans a vast metropolitan area, with
+      a prominent skyline dominated by numerous high-rise buildings, many of which
+      are illuminated with yellow, white, and colored lights.'
+    name: '101'
+  '102':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a dense urban environment
+      during twilight. The scene is dominated by a multi-lane highway running horizontally
+      across the frame, flanked on both sides by high-rise buildings of varying architectural
+      styles.'
+    name: '102'
+  '103':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a coastal urban area.
+      The scene is dominated by a long, curved sandy beach bordered by the ocean on
+      the right and a dense urban zone on the left.'
+    name: '103'
+  '104':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a coastal urban area
+      adjacent to a marina. The scene spans a dense cityscape with low- to mid-rise
+      buildings featuring terracotta roofs, interspersed with greenery and occasional
+      taller structures.'
+    name: '104'
+  '105':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a densely forested urban
+      park area adjacent to a sprawling cityscape, with a mountain range visible in
+      the distant background under a hazy, pale sky. The park occupies the central
+      and lower portions of the frame, characterized by a thick canopy of green trees.'
+    name: '105'
+  '106':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a dense urban environment,
+      characterized by a tightly packed grid of buildings of varying heights, architectural
+      styles, and colors, predominantly in shades of beige, brown, and white. The
+      scene includes numerous mid-rise and high-rise structures, with some featuring
+      rooftop greenery or mechanical equipment.'
+    name: '106'
+  '107':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a dense urban environment
+      during twilight. The scene features a grid-like layout of multi-story buildings
+      with classical architectural styles, including ornate facades, arched windows,
+      and varied rooflines.'
+    name: '107'
+  '108':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a dense urban environment
+      dominated by high-rise buildings. A tall, partially constructed skyscraper occupies
+      the central foreground, featuring exposed concrete floors, glass paneling on
+      one side, and external scaffolding and crane attachments.'
+    name: '108'
+  '109':
+    Visual elaboration: 'Generate a video that illustrates the season changing from
+      autumn to winter: The video presents an aerial view of a dense urban environment,
+      dominated by a cluster of high-rise buildings varying in architectural style
+      and height. The foreground features a large green park with rows of trees, pathways,
+      and open plazas.'
+    name: '109'

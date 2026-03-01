@@ -1,0 +1,153 @@
+enable_xformers_memory_efficient_attention: true
+inference_config:
+  diversity_rand_ratio: 0.1
+mixed_precision: fp16
+output_dir_origin: ./results/a2w
+pretrained_model_path: ./pretrained_ckpt/stable-diffusion-v1-5
+seed: 42
+validation_data:
+  attention_adapt_step: 50
+  attention_type_former:
+  - self
+  - first
+  - former
+  attention_type_latter:
+  - self
+  guidance_scale: 5.5
+  height: 512
+  use_inv_latent: true
+  width: 512
+  interpolate_k: 0
+  negative_prompt: longbody, lowres, bad anatomy, bad hands, missing fingers, extra
+    digit, fewer difits, cropped, worst quality, low quality, deformed body, bloated,
+    ugly, unrealistic
+  num_inference_steps: 50
+  num_inv_steps: 50
+  
+  t1: 48
+  binding_steps: 25
+  num_intervention_steps: 49
+  gome: 'yes' #yes,no
+  noise_sampling_method: vanilla #vanilla, pyoco_mixed, pyoco_progressive
+
+  test_dataset:
+    '10':
+      Visual elaboration: 'Generate a high-resolution satellite view video that illustrates the season changing from
+        autumn to winter: The scene depicts a region undergoing rapid urban expansion,
+        likely in a subtropical or temperate zone. The landscape includes clusters of
+        residential buildings, road networks, agricultural fields, and patches of dense
+        vegetation.'
+      name: '10'
+      prompts:
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation under a golden, vibrant
+        sun during a warm early autumn.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation under a hazy, orange sky
+        during a breezy mid autumn.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation under a grey, overcast sky
+        with falling late autumn leaves.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation under a cold sky with a
+        light early winter frost.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation dusted by a thin layer of
+        cold winter snow.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation covered in a heavy, pristine
+        coat of white winter snow.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation featuring frozen patches
+        of ice and hardened winter snow.'
+      - 'A high-resolution satellite view: Urban expansion region, residential buildings, road
+        networks, agricultural fields, and dense vegetation under a biting, pale blue
+        sky with melting winter slush.'
+    '118':
+      Visual elaboration: 'Generate a video that illustrates the season changing from
+        autumn to winter: The video presents an aerial view of a coastal urban area
+        bordered by large rock formations and a wide bay. The scene includes a prominent,
+        steep-sided mountain on the left, with two adjacent rocky hills to the right,
+        all partially covered in green vegetation.'
+      name: '118'
+      prompts:
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, green vegetation
+        under early autumn sun.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, golden vegetation
+        under hazy autumn sunset.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, brown vegetation
+        under cold autumn skies.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, withered vegetation
+        with early autumn frost.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, vegetation dusted
+        in light winter snow.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, vegetation blanketed
+        under heavy white winter snow.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, vegetation amidst
+        frozen ice and winter snow.'
+      - 'A high-angle drone shot: Coastal urban area, large rock formations, wide bay,
+        steep-sided mountain left, two adjacent rocky hills right, vegetation under
+        biting pale winter skies.'
+    '185':
+      Visual elaboration: 'Generate a high-resolution satellite view video that illustrates the season changing from
+        autumn to winter: The video presents an aerial view of a densely built urban
+        area under clear skies. The scene encompasses a vast cityscape with a central
+        cluster of high-rise buildings, including several skyscrapers, forming a prominent
+        business district.'
+      name: '185'
+      prompts:
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district under a clear, golden autumn sky.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district under a hazy, dimming late autumn afternoon
+        sky.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district under a grey, overcast sky with autumn
+        frost.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district featuring a thin layer of early winter
+        frost.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district dusted by light flurries of cold winter
+        snow.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district blanketed under a thick, white layer
+        of winter snow.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district showing frozen patches of ice and heavy
+        winter snow.'
+      - 'A high-resolution satellite view: A densely built urban cityscape with high-rise buildings
+        and skyscrapers in the business district under a biting, pale sky with grey
+        winter slush.'
+    '200':
+      Visual elaboration: 'Generate a high-resolution satellite view video that illustrates the season changing from
+        autumn to winter: The video presents a top-down aerial view of a densely built
+        urban area. The scene is dominated by a grid-like layout of multi-story buildings
+        with varied roof colors, primarily red, gray, and white.'
+      name: '200'
+      prompts:
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs under a golden autumn sun.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs under a hazy late autumn afternoon.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs under a grey, overcast autumn sky.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs dusted in early winter frost.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs dusted by light cold winter snow.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs blanketed under thick white winter
+        snow.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs featuring frozen patches of winter
+        ice.'
+      - 'A high-resolution satellite view: Top-down aerial view of a grid-like layout of multi-story
+        buildings with red, gray, and white roofs under a biting sky with winter slush.'
